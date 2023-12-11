@@ -1,0 +1,75 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
+  color: #adadad;
+  height: 100%;
+  background-color: #f2f1f8;
+}
+
+/* collapsible components */
+
+.collapsible {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.28s all ease-in-out;
+}
+
+.collapsible.collapsible--expanded {
+  max-height: 100vh;
+  padding-block: 9px;
+  height: 100%;
+}
+
+/* sidebar style */
+
+.sidebar {
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-y: scroll;
+}
+
+/* scroll bar css */
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 2px; /* Set the scrollbar width */
+  display: none;
+}
+
+/* WebKit (Chrome, Safari) Track */
+::-webkit-scrollbar-track {
+  background: #0a0a0a25; /* Set the track color */
+  display: none;
+}
+
+/* WebKit (Chrome, Safari) Thumb */
+::-webkit-scrollbar-thumb {
+  background: #0a0a0a25; /* Set the thumb color */
+  display: none;
+}
+
+* {
+  scrollbar-width: thin; /* Set the scrollbar width */
+  scrollbar-color: #ebebf3 #f1f1f1; /* Set the thumb and track color */
+}
